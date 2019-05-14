@@ -1,0 +1,12 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+edge-react/node_modules
+
+# production
+edge-react/build
+
+
+foods.txt
+
+foods.7z
