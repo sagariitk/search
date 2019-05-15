@@ -18,7 +18,6 @@ def search():
     try:
         search_string = request.json['search_string']
         search_array = search_string.split(',')
-        # search_array.encode('ascii', 'ignore')
         search_array = [str(r) for r in search_array]
 
         objects = []
