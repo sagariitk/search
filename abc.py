@@ -21,8 +21,8 @@ def search():
         objects = []
         dict1 = {}
         file1 = open("foods.txt", "r")
-
-        for i in range(100000):
+        print(search_array)
+        for i in range(50000):
             rating_count = 0
             product_productId = file1.readline().split(': ')[1]
             review_userId = file1.readline().split(': ')[1]
@@ -48,6 +48,7 @@ def search():
             rating = str(rating_count/len(search_array)) + "_" + \
                 review_score + "_" + product_productId
             dict1[rating] = unique_identifier
+        
         file1.close()
         objects = return_result(dict1, objects)
 
